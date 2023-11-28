@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/local-geekIco.png">
+    <title>LocalGeek</title>
+</head>
+
+<body>
+    <section class="login-screen"></section>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <div id="open">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href="./">
+                    <img src="/assets/logo-etec-redimensionada 1.svg" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <input placeholder="Buscar" type="text">
+                <label for=""><ion-icon name="search-outline"></ion-icon></label>
+            </div>
+            <div class="header-right">
+                <div class="cartOpen"><ion-icon class="icon-header" name="bag-outline"></ion-icon></div>
+                <div class="cartCount"></div>
+            </div>
+
+            <div class="header-list">
+                <div class="h-user">
+                    <button id="login"><i class="fa-regular fa-circle-user"></i> Entrar</button>
+                    <button id="close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="h-links">
+                    <a href="#prod"><i class="fa-solid fa-shirt"></i> Camisetas</a>
+                    <a href="#prod"><i class="fa-solid fa-mug-saucer"></i> Canecas</a>
+                    <a href="#prod"><i class="fa-solid fa-person"></i> Action Figure</a>
+                </div>
+            </div>
+
+            <div class="header-cart">
+                <div class="h-cart-title">
+                    <p><ion-icon name="bag-outline"></ion-icon> Sacola</p>
+                    <button id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="h-cart-items">
+
+                </div>
+                <div class="h-cart-pay">
+                    Comprar
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="search">
+                <input placeholder="Buscar" type="text">
+                <label for=""><ion-icon name="search-outline"></ion-icon></label>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="image" class="carrosel">
+        <img class="web" name="slide" alt="">
+        <img class="mobile" src="./assets/banner/banner-mobilepng1.png" name="slideMobile" alt="">
+    </section>
+
+    <section class="pay">
+        <div class="infos-pay">
+            <div><img src="/assets/img/carro-frete.png" alt=""></div>
+            <div>
+                <p class="info-title">FRETE GRATIS</p>
+                <p>Em Todo Brasil</p>
+            </div>
+        </div>
+        <div class="infos-pay">
+            <div><img src="/assets/img/pix.png" alt=""></div>
+            <div>
+                <p class="info-title">5% DE DESCONTO</p>
+                <p>Pagamento no Pix</p>
+            </div>
+        </div>
+        <div class="infos-pay">
+            <div><img src="/assets/img/cartao.png" alt=""></div>
+            <div class="info-full-title">
+                <p class="info-title">ATÉ 10X SEM JUROS</p>
+                <p>Acima de R$200</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="prod" class="sub-title">
+        <h1>LIQUIDA GEEK COM ATÉ 50% OFF</h1>
+        <h3>Action Figures, Chaveiros, Moletom e Muito Mais. Aproveite!</h3>
+    </section>
+
+    <section class="product_arrow">
+        <div onclick="ClickLeft0()" class="p-leftArrow"><ion-icon class="product_arrowleft"
+                name="chevron-back-outline"></ion-icon></div>
+
+        <div id="container-product" class="product"></div>
+
+        <div onclick="ClickRight0()" id="arrow-right" class="p-rightArrow"><ion-icon class="product_arrowright"
+                name="chevron-forward-outline"></ion-icon></div>
+    </section>
+
+    <footer>
+        <div class="footer-pay">
+            <div class="footer-img">
+                <img src="./assets/logo-etec-redimensionada 1.svg" alt="">
+            </div>
+            <div class="footer-method">
+                <p>Aceitamos</p>
+                <div>
+                    <i class="fa-brands fa-pix"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-solid fa-barcode"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-midia">
+            <a target="_blank"
+                href="https://api.whatsapp.com/send/?phone=5511945831503&text&type=phone_number&app_absent=0"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://www.instagram.com/localgeek_ds/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="./js/banner.js"></script>
+    <script src="./js/cartCounter.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/createCard.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/scroll-bar.js"></script>
+    <script src="https://kit.fontawesome.com/a76cf2ada8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
